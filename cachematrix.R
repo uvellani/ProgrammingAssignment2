@@ -45,9 +45,9 @@ cacheSolve <- function(x=matrix()) {
         
         #if its not in the cache load it
         if(is.null(imx)){
-                message("Loaded into cache.")
                 #load the inverse cache
                 imx<-x$setInvMatrix(solve(x$getMatrix()))
+                message("Loaded into cache.")
         } 
         
         #return cached value
